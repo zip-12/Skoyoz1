@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skoyoz - Boutique</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="logo fade-in">Skoyoz</h1>
+        <p class="subtitle fade-in">Style, Confort & Authenticité</p>
+    </div>
+
+    <section class="products">
+        <div class="product slide-in">
+            <img src="image2.jpeg" alt="Pull Skoyoz">
+            <h3>Pull Skoyoz</h3>
+            <p>Confort ultime pour toutes saisons.</p>
+            <button onclick="addToCart('Pull Skoyoz')">Ajouter au panier</button>
+        </div>
+        <div class="product slide-in">
+            <img src="image1.jpg" alt="T-Shirt Skoyoz">
+            <h3>T-Shirt Skoyoz</h3>
+            <p>Un style décontracté et tendance.</p>
+            <button onclick="addToCart('T-Shirt Skoyoz')">Ajouter au panier</button>
+        </div>
+        <div class="product slide-in">
+            <img src="image1.jpg" alt="T-Shirt Skoyoz">
+            <h3>T-Shirt Skoyoz</h3>
+            <p>Un style décontracté et tendance.</p>
+            <button onclick="addToCart('T-Shirt Skoyoz')">Ajouter au panier</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="product slide-in">
+            <img src="image2.jpeg" alt="Pull Skoyoz">
+            <h3>Pull Skoyoz</h3>
+            <p>Confort ultime pour toutes saisons.</p>
+            <button onclick="addToCart('Pull Skoyoz')">Ajouter au panier</button>
+        </div>
+       
+
+        <div class="product slide-in">
+            <img src="image1.jpg" alt="T-Shirt Skoyoz">
+            <h3>T-Shirt Skoyoz</h3>
+            <p>Un style décontracté et tendance.</p>
+            <button onclick="addToCart('T-Shirt Skoyoz')">Ajouter au panier</button>
+        </div>
+
+        <div class="product slide-in">
+            <img src="image1.jpg" alt="T-Shirt Skoyoz">
+            <h3>T-Shirt Skoyoz</h3>
+            <p>Un style décontracté et tendance.</p>
+            <button onclick="addToCart('T-Shirt Skoyoz')">Ajouter au panier</button>
+        </div>
+
+       
+    </section>
+
+    <div id="cart" class="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+    </div>
+</body>
+</html>
