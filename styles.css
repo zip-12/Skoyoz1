@@ -1,0 +1,172 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #054196;
+  }
+ 
+  header {
+    background-color: #12010bea;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    
+  }
+  .logo {
+    border-radius: 20%;
+    width: 70px;
+    height: 70px;
+
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+ 
+  .hero {
+    display: flex;
+    padding: 50px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+  }
+  
+  .hero-text p {
+    color: #E5E7EB;
+    font-size: 18px;
+  }
+  
+  .hero-text button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+ .hero-image img {
+    width: 40%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  .hero-image img {
+    background-color: #4B5563;
+    color: #9CA3AF;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: auto;
+    margin-left: 250px;
+  }
+  
+ 
+  .info {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .info h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-bottom: 20px;
+  }
+  
+  .info-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .info-box {
+    width: 20%;
+    text-align: center; 
+    background-color: #E5E7EB; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  
+  .info-box img {
+    width: 200px; 
+    height: auto; 
+    margin-bottom: 10px; 
+  }
+  
+  .info-box p{
+    color: #000000f1;
+    font-size: 18px;
+    height: auto;
+  
+  }
+  
+ 
+  .quote {
+    background-color: #bdc4beea;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    font-style: italic;
+  }
+  
+  .quote p {
+    font-size: 36px;
+    font-weight: 100;
+  }
+  
+  
+  .cta {
+    background-color: #000000;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    margin: 0%;
+  }
+  
+  .cta button {
+    background-color: #480a94;
+    color: #040004;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  
+  footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin: 5%;
+  }
+  
