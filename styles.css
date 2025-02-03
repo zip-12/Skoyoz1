@@ -1,172 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    color: #054196;
-  }
- 
-  header {
-    background-color: #12010bea;
-    color: #F9FAF8;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-  }
-  
-  .header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
-    
-  }
-  .logo {
-    border-radius: 20%;
-    width: 70px;
-    height: 70px;
+    box-sizing: border-box;
+}
 
-  }
-  
-  nav a {
-    margin-left: 20px;
-    color: #E5E7EB;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Menu */
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-  }
-  
- 
-  .hero {
+}
+
+/* Contenu principal */
+.container {
+    margin-top: 100px;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Produits */
+.products {
     display: flex;
-    padding: 50px;
-    background-color: #1F2937;
-    color: #F9FAF8;
-  }
-  
-  .hero-text h1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #F9FAF8;
-  }
-  
-  .hero-text p {
-    color: #E5E7EB;
-    font-size: 18px;
-  }
-  
-  .hero-text button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
- .hero-image img {
-    width: 40%;
-    height: auto;
-    display: block;
-  }
-  
-  
-  .hero-image img {
-    background-color: #4B5563;
-    color: #9CA3AF;
-    display: block;
-    align-items: center;
     justify-content: center;
-    width: 250px;
-    height: auto;
-    margin-left: 250px;
-  }
-  
- 
-  .info {
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .info h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1F2937;
-    margin-bottom: 20px;
-  }
-  
-  .info-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     gap: 20px;
-  }
-  .info-box {
-    width: 20%;
-    text-align: center; 
-    background-color: #E5E7EB; 
+    margin-top: 50px;
+}
+
+.product {
+    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  
-  .info-box img {
-    width: 200px; 
-    height: auto; 
-    margin-bottom: 10px; 
-  }
-  
-  .info-box p{
-    color: #000000f1;
-    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img {
+    width: 150px;
     height: auto;
-  
-  }
-  
- 
-  .quote {
-    background-color: #bdc4beea;
-    color: black;
-    text-align: center;
-    padding: 50px 20px;
-    font-style: italic;
-  }
-  
-  .quote p {
-    font-size: 36px;
-    font-weight: 100;
-  }
-  
-  
-  .cta {
-    background-color: #000000;
-    color: #F9FAF8;
-    text-align: center;
-    padding: 50px 20px;
-  }
-  
-  .cta p {
-    font-size: 18px;
-    margin: 0%;
-  }
-  
-  .cta button {
-    background-color: #480a94;
-    color: #040004;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background: black;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-  }
-  
-  
-  footer {
-    background-color: #1F2937;
-    color: #F9FAF8;
-    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: gray;
+}
+
+/* Panier */
+.cart {
+    margin-top: 50px;
+    background: #fff;
     padding: 20px;
-    font-size: 14px;
-    margin: 5%;
-  }
-  
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
